@@ -13,7 +13,7 @@ void setup()
   pinMode(ENKODER1, INPUT);
   pinMode(ENKODER2, INPUT_PULLUP);
   pinMode(ENKODER3, INPUT_PULLUP);
-  
+
   Serial.begin(9600);
 }
 
@@ -41,7 +41,7 @@ void loop()
   }
 
   posledniStav = stav;
-  
+
   Serial.println(citac);
   delay(10);
 }

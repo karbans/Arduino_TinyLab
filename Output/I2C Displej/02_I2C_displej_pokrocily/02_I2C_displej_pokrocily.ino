@@ -25,6 +25,7 @@ void vykresliDisplej(String text1, String text2 = "")
 void setup()
 {
   Serial.begin(9600);
+  while (!Serial);
   // Inicializace displeje: Nastavení typu
   lcd.setMCPType(LTI_TYPE_MCP23008);
   // Spuštění a nastavení begin(# znaků, # řádků)
@@ -41,14 +42,14 @@ void loop()
 {
   // Vyčistíme Serial tak, že jej načteme do proměnné
   String text = Serial.readString();
-  
+
   Serial.println("Zadej text k zobrazeni na displeji:");
-  
+
   while (Serial.available() == 0)
   {
     // Prázdná smyčka čekající na vstup
   }
-  
+
   text = Serial.readString();
   Serial.println(text);
   lcd.clear();

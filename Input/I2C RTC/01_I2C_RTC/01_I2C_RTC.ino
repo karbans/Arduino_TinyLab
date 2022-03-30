@@ -23,7 +23,7 @@ void hodinyNastaveni()
 void hodinyVypis()
 {
   DateTime ted = rtc.now();
-  
+
   Serial.print("Aktuální čas: ");
   Serial.print(ted.hour());
   Serial.print(':');
@@ -41,10 +41,10 @@ void hodinyVypis()
 void setup()
 {
   Serial.begin(115200);
-  while(!Serial);
+  while (!Serial);
 
   rtc.begin();
-  
+
   hodinyNastaveni();
   hodinyVypis();
 }

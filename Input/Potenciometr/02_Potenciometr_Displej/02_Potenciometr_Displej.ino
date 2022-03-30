@@ -11,7 +11,7 @@ LedControl lc = LedControl(10, 12, 11, 1);
 
 void setup()
 {
-  // Probuzení displeje 
+  // Probuzení displeje
   // shutdown(adresa, T/F)
   lc.shutdown(0, false);
 
@@ -32,7 +32,7 @@ void zobrazCislo(int in_cislo)
   int cislo;
 
   // Zobrazí číslice na správném místě (zobrazuje od začátku)
-  for(int i = 3; i >= 0; i--)
+  for (int i = 3; i >= 0; i--)
   {
     cislo = in_cislo % 10;
     in_cislo /= 10;

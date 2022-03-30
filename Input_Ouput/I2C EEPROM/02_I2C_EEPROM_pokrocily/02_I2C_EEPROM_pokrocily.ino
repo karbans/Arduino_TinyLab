@@ -9,7 +9,7 @@ I2C_eeprom eeprom(0x50, I2C_DEVICESIZE_24LC256);
 void eepromZapis(String in_text)
 {
   int delka;
-  
+
   delka = in_text.length();
   Serial.print("Zapisuji text o délce ");
   Serial.print(delka);
@@ -63,10 +63,10 @@ void setup()
 {
   String text;
   int delka = 0;
-  
+
   Serial.begin(115200);
   // Čekáme na start Serialu
-  while(!Serial);
+  while (!Serial);
 
   // Inicializace EEPROM
   eeprom.begin();
@@ -75,7 +75,7 @@ void setup()
   if (!eeprom.isConnected())
   {
     Serial.println("CHYBA: EEPROM neběží/odpojena.");
-    while(true);
+    while (true);
   }
 
   Serial.println("EEPROM běží.");

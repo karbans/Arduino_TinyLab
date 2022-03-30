@@ -23,8 +23,8 @@ int prepocetTeploty(int in_hodnota)
 void zobrazCislo(int in_cislo)
 {
   int cislo;
-  
-  for(int i = 3; i >= 0; i--)
+
+  for (int i = 3; i >= 0; i--)
   {
     cislo = in_cislo % 10;
     // in_cislo = in_cislo / 10;
@@ -35,7 +35,7 @@ void zobrazCislo(int in_cislo)
 
 void setup()
 {
-  // Probuzení displeje 
+  // Probuzení displeje
   // shutdown(adresa, T/F)
   lc.shutdown(0, false);
 
@@ -54,6 +54,6 @@ void loop()
   int teplota = analogRead(SENZOR);
 
   Serial.println(prepocetTeploty(teplota));
-  
+
   delay(1000);
 }

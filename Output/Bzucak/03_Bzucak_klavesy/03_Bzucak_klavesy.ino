@@ -15,7 +15,7 @@ void loop()
 {
   stisknuto = digitalRead(TLACITKO);
   Serial.println(stisknuto);
-  if(stisknuto == 0)
+  if (stisknuto == 0)
   {
     tone(BZUCAK, 10);
   }

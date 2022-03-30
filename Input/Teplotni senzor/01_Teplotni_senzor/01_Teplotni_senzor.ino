@@ -19,7 +19,7 @@ void setup()
 void loop()
 {
   int teplota = analogRead(SENZOR);
-  
+
   Serial.print("Teplota pomocí funkce: ");
   Serial.println(prepocetTeploty(analogRead(SENZOR)));
 
@@ -27,6 +27,6 @@ void loop()
   teplota = map(teplota, 0, 1023, 0, 500);
   Serial.print("Teplota pomocí map: ");
   Serial.println(teplota);
-  
+
   delay(1000);
 }

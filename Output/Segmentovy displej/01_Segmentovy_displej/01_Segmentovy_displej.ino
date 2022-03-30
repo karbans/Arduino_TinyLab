@@ -7,7 +7,7 @@ LedControl lc = LedControl(10, 12, 11, 1);
 
 void setup()
 {
-  // Probuzení displeje 
+  // Probuzení displeje
   // shutdown(adresa, T/F)
   lc.shutdown(0, false);
 
@@ -26,8 +26,8 @@ void setup()
 void zobrazCislo(int in_cislo)
 {
   int cislo;
-  
-  for(int i = 3; i >= 0; i--)
+
+  for (int i = 3; i >= 0; i--)
   {
     cislo = in_cislo % 10;
     // in_cislo = in_cislo / 10;
@@ -38,7 +38,7 @@ void zobrazCislo(int in_cislo)
 
 void loop()
 {
-  for(int i = 0; i < 9999; i++)
+  for (int i = 0; i < 9999; i++)
   {
     zobrazCislo(i);
     delay(100);
