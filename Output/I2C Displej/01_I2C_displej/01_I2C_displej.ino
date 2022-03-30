@@ -3,7 +3,7 @@
 #include <LiquidTWI2.h>
 
 // Deklarace displeje
-// LiquidCrystal_I2C <název>(adresa sběrnice)
+// LiquidTWI2 <název>(adresa sběrnice)
 LiquidTWI2 lcd(0x20);
 
 void setup()

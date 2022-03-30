@@ -1,4 +1,4 @@
-// Pro lepší čitelnost dáme Serial1 alias BT
+// Pro lepší čitelnost dáme Serial1 alias WF
 // Serial1 operuje pouze na pinech 0, 1, kde je aktuálně připojený modul WiFi
 #define WF Serial1
 
@@ -9,9 +9,9 @@ void setup()
 {
   // Otevření komunikace Arduino - USB
   Serial.begin(9600);
-  // Otevření komunikace Arduino - BT
+  // Otevření komunikace Arduino - WiFi
   // WiFi modul funguje implicitně na 115200 baudech
-  BT.begin(115200);
+  WF.begin(115200);
   while (!Serial);
 
   Serial.println("Nezapomeň přepnout sériový monitor na 'Obojí NL & CR!'");

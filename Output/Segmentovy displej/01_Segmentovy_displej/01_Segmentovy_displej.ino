@@ -13,7 +13,7 @@ void setup()
 
   // Nastavení podsvícení
   // setIntensity(adresa, <0-15>)
-  lc.setIntensity(0, 8);
+  lc.setIntensity(0, 15);
 
   // Smazání displeje
   // clearDisplay(adresa)
@@ -32,6 +32,7 @@ void zobrazCislo(int in_cislo)
     cislo = in_cislo % 10;
     // in_cislo = in_cislo / 10;
     in_cislo /= 10;
+    // .setDigit(adresa, pozice, číslo, desetinná tečka T/F)
     lc.setDigit(0, i, cislo, false);
   }
 }

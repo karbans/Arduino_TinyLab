@@ -1,5 +1,6 @@
 // Definice konstanty pinu LED
 #define LED 10
+// Pro lepší čitelnost dáme Serial1 alias BT
 // Serial1 operuje pouze na pinech 0, 1, kde je aktuálně připojený modul BT
 #define BT Serial1
 // Deklarace vstupu přes BT
@@ -7,6 +8,9 @@ int data;
 
 void setup()
 {
+  // Otevření komunikace Arduino - USB
+  Serial.begin(9600);
+  // Otevření komunikace Arduino - BT
   BT.begin(9600);
   while (!Serial);
 
@@ -33,7 +37,6 @@ void loop()
       Serial.println("LED OFF");
       BT.println("LED OFF");
     }
-    else {}
   }
   delay(100);
 }
