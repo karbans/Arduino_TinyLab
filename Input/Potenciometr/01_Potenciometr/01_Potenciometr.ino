@@ -1,4 +1,4 @@
-// Definice konstanty pro analogový pin, který čte potenciometr
+// Definice konstanty pinu potenciometru
 #define POTENCIOMETR A0
 
 void setup()

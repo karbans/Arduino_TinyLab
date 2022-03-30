@@ -5,7 +5,7 @@
 // LedControl(Din, CLK, Load, # čipů)
 LedControl lc = LedControl(10, 12, 11, 1);
 
-// Deklarace potenciometru
+// Definice konstanty pinu potenciometru
 #define POTENCIOMETR A0
 
 
