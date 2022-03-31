@@ -1,5 +1,3 @@
-// Vysilac tinylab
-//#include <SPI.h>
 // Použité knihovny: RF24
 #include <RF24.h>
 
