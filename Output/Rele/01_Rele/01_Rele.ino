@@ -6,13 +6,12 @@ void setup()
   pinMode(RELE, OUTPUT);
 
   Serial.begin(9600);
-  while (!Serial);
 }
 
 void loop()
 {
   digitalWrite(RELE, HIGH);
-  delay(5000);
+  delay(3000);
   digitalWrite(RELE, LOW);
-  delay(5000);
+  delay(3000);
 }

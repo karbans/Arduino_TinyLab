@@ -1,4 +1,5 @@
-// Použité knihovny: RF24
+// Použité knihovny: RF24, SPI (dependence)
+#include <SPI.h>
 #include <RF24.h>
 
 // Definice konstant pinů RF
