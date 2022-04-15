@@ -14,8 +14,8 @@ void hodinyNastaveni()
   {
     Serial.println("Hodiny neběží. Probíhá nastavení.");
     // adjust(čas + datum), v tomto případě
-    // DateTime([F]ormát(definice data), [F]ormát(definice času))
-    rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));
+    // DateTime((definice data), (definice času))
+    rtc.adjust(DateTime((__DATE__), (__TIME__)));
   }
 }
 

@@ -45,7 +45,6 @@ void sdZapis(String in_text)
 // Metoda pro čtení karty
 void sdCteni()
 {
-  String out_text;
   // Čtení souboru
   // open(název, zápis/čtení)
   soubor = SD.open(SOUBOR_NAZEV, FILE_READ);

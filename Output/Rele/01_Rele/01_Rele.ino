@@ -10,8 +10,10 @@ void setup()
 
 void loop()
 {
+  // Sepnutí relé
   digitalWrite(RELE, HIGH);
   delay(3000);
+  // Rozepnutí relé
   digitalWrite(RELE, LOW);
   delay(3000);
 }
