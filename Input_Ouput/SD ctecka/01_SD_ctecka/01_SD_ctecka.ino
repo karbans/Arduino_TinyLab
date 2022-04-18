@@ -12,10 +12,10 @@ String const SOUBOR_NAZEV = "test.txt";
 void sdNastaveni()
 {
   Serial.println("Příprava SD karty.");
-  if(!SD.begin(SDCTECKA))
+  if (!SD.begin(SDCTECKA))
   {
     Serial.println("Chyba karty.");
-    while(true);
+    while (true);
   }
   Serial.println("Karta připravena.");
 }
@@ -48,11 +48,11 @@ void sdCteni()
   // Čtení souboru
   // open(název, zápis/čtení)
   soubor = SD.open(SOUBOR_NAZEV, FILE_READ);
-  if(soubor)
+  if (soubor)
   {
     Serial.println("Čtu ze souboru: ");
 
-    while(soubor.available())
+    while (soubor.available())
     {
       Serial.write(soubor.read());
     }
@@ -68,7 +68,7 @@ void sdCteni()
 void setup()
 {
   Serial.begin(9600);
-  while(!Serial);
+  while (!Serial);
 
   String text = "Testovací text pro SD kartu.";
 
