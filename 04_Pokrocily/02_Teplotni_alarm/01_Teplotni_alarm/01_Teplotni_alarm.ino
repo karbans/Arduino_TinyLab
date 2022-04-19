@@ -60,7 +60,7 @@ void setup()
 
 void loop()
 {
-  Serial.print("Aktuální tepolota: ");
+  Serial.print("Aktuální teplota: ");
   Serial.print(teplota());
   Serial.println(" °C.");
   
